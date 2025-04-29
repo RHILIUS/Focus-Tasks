@@ -16,7 +16,7 @@ export function AppHeader() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbPage className="line-clamp-1">
+              <BreadcrumbPage className="line-clamp-1 font-bold">
                 Tasks Today
               </BreadcrumbPage>
             </BreadcrumbItem>
@@ -24,8 +24,12 @@ export function AppHeader() {
         </Breadcrumb>
       </div>
       <div className="flex mr-5 w-50 justify-between items-center">
-        <Button className="px-4 h-8">Create</Button>
-        <Button className="rounded-full h-9 w-9 p-0">C</Button>
+        <Button className="px-4 h-8 cursor-pointer" variant="secondary" >Create</Button>
+        <Separator
+          orientation="vertical"
+          className="mx-2 data-[orientation=vertical]:h-4"
+        />
+        <Button className="rounded-full h-9 w-9 p-0 cursor-pointer" variant="secondary">C</Button>
       </div>
     </header>
   )

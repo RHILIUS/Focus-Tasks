@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1",
+    "title": "Workout",
+    "completed": false
+  },
+  {
+    "id": "2",
+    "title": "Skin care",
+    "completed": true
+  },
+  {
+    "id": "3",
+    "title": "Wash the dishes",
+    "completed": true
+  }
+]

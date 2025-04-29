@@ -25,9 +25,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <AppHeader />
               
               {/* Main Panel */}
-              <main className="flex flex-1 items-center gap-2 px-3">
-                {children}
-              </main>
+              {children}
+
+              {/* Right Panel */}
 
             </SidebarInset>
           </SidebarProvider>
