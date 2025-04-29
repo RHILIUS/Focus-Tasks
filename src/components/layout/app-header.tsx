@@ -6,10 +6,13 @@ import { Button } from "../ui/button";
 
 export function AppHeader() {
   return (
-    <header className="flex h-14 items-center justify-between ">
-      <div className="flex px-3 items-center">
-        <SidebarTrigger />
-        <Separator orientation="vertical" className="mr-2 h-4" />
+    <header className="flex h-12   items-center justify-between border-b">
+      <div className="flex flex-1 items-center gap-1 px-4 lg:gap-2 lg:px-6">
+        <SidebarTrigger className="-ml-1" />
+        <Separator
+          orientation="vertical"
+          className="mx-2 data-[orientation=vertical]:h-4"
+        />
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -21,8 +24,8 @@ export function AppHeader() {
         </Breadcrumb>
       </div>
       <div className="flex mr-5 w-50 justify-between items-center">
-        <Button className="px-5">Create</Button>
-        <Button className="rounded-full h-12 w-12 p-0">C</Button>
+        <Button className="px-4 h-8">Create</Button>
+        <Button className="rounded-full h-9 w-9 p-0">C</Button>
       </div>
     </header>
   )
